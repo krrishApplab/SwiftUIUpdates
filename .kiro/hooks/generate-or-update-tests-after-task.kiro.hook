@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "enabled": true,
+  "name": "Generate or Update Tests After Task",
+  "when": {
+    "type": "agentStop"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Read AGENTS.md.\n\nAfter completing the user prompt, review only the files changed in this task.\n\nIf the change affects UI flow, navigation, forms, buttons, validation, tab behaviour, or accessibility:\n\n1. Add or update related Appium tests inside:\n\nMOCIUITests/Appium/Tests/\n\n2. Add accessibility identifiers only where needed for Appium testing.\n3. Do not create dummy tests.\n4. Do not modify unrelated stable features.\n5. Do not restructure files unless explicitly requested.\n6. Add concise testing details to the change log.\n\nIf no Appium test is needed, explain the reason in the change log.\n"
+  },
+  "workspaceFolderName": "SwiftUIUpdates",
+  "shortName": "generate-or-update-tests-after-task"
+}

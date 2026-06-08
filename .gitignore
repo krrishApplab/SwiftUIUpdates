@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.swiftpm/
+.build/
+Packages/
+
+# Node / Appium tests
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Appium generated reports
+SwiftUIUpdatesUITests/Appium/Reports/screenshots/
+SwiftUIUpdatesUITests/Appium/Reports/appium-report*.json
