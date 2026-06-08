@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct HomeView: View {
+
+    // MARK: - State
+    @State private var isMenuOpen = false
+
+    // MARK: - Body
     var body: some View {
         NavigationStack {
             VStack(spacing: 12) {
@@ -23,6 +28,19 @@ struct HomeView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .navigationTitle("Home")
             .navigationBarTitleDisplayMode(.large)
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button {
+                        isMenuOpen = true
+                    } label: {
+                        Image(systemName: "line.3.horizontal")
+                    }
+                    .accessibilityIdentifier("home.menuButton")
+                }
+            }
+        }
+        .overlay {
+            SideMenuView(isOpen: $isMenuOpen)
         }
     }
 }
