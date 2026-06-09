@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		A11A9011C5F14330FA150002 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A9011C5F14330FA150001 /* AppTheme.swift */; };
 		A11A9011C5F14330FA150004 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A9011C5F14330FA150003 /* SideMenuView.swift */; };
+		A11A9011C5F14330FA150006 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A9011C5F14330FA150005 /* ProfileViewModel.swift */; };
+		A11A9011C5F14330FA150008 /* StatisticCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A9011C5F14330FA150007 /* StatisticCardView.swift */; };
+		A11A9011C5F14330FA15000A /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A9011C5F14330FA150009 /* EditProfileView.swift */; };
 		AA1A9011C5F14330FA15049E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D7A8CB1867A2F01CDEDA25 /* SettingsView.swift */; };
 		C276BBC22FD68C3B005E546D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C276BBBD2FD68C3B005E546D /* Assets.xcassets */; };
 		C276BBC32FD68C3B005E546D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C276BBBE2FD68C3B005E546D /* ContentView.swift */; };
@@ -43,6 +46,9 @@
 		66D7A8CB1867A2F01CDEDA25 /* SettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		A11A9011C5F14330FA150001 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		A11A9011C5F14330FA150003 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		A11A9011C5F14330FA150005 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		A11A9011C5F14330FA150007 /* StatisticCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticCardView.swift; sourceTree = "<group>"; };
+		A11A9011C5F14330FA150009 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		BFD07A4DA50119E378054DA3 /* MainTabViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabViewTests.swift; sourceTree = "<group>"; };
 		C276BBAD2FD68AEF005E546D /* SwiftUIUpdates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIUpdates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C276BBBD2FD68C3B005E546D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,6 +136,9 @@
 				C276BBC62FD68CE3005E546D /* CustomCardView.swift */,
 				A11A9011C5F14330FA150001 /* AppTheme.swift */,
 				A11A9011C5F14330FA150003 /* SideMenuView.swift */,
+				A11A9011C5F14330FA150005 /* ProfileViewModel.swift */,
+				A11A9011C5F14330FA150007 /* StatisticCardView.swift */,
+				A11A9011C5F14330FA150009 /* EditProfileView.swift */,
 				C276BBBD2FD68C3B005E546D /* Assets.xcassets */,
 				66D7A8CB1867A2F01CDEDA25 /* SettingsView.swift */,
 			);
@@ -262,6 +271,9 @@
 				AA1A9011C5F14330FA15049E /* SettingsView.swift in Sources */,
 				A11A9011C5F14330FA150002 /* AppTheme.swift in Sources */,
 				A11A9011C5F14330FA150004 /* SideMenuView.swift in Sources */,
+				A11A9011C5F14330FA150006 /* ProfileViewModel.swift in Sources */,
+				A11A9011C5F14330FA150008 /* StatisticCardView.swift in Sources */,
+				A11A9011C5F14330FA15000A /* EditProfileView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
