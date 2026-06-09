@@ -8,22 +8,44 @@
 import SwiftUI
 
 struct SearchView: View {
+
+    // MARK: - State
+    @State private var viewModel = SearchViewModel()
+
+    // MARK: - Body
     var body: some View {
         NavigationStack {
-            VStack(spacing: 12) {
-                Image(systemName: "magnifyingglass")
-                    .imageScale(.large)
-                    .font(.largeTitle)
-                    .foregroundStyle(.tint)
-                Text("Search")
-                    .font(.title2)
-                    .fontWeight(.semibold)
+            Group {
+                if viewModel.hasResults {
+                    resultsList
+                } else {
+                    emptyState
+                }
             }
-            .padding()
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
             .navigationTitle("Search")
             .navigationBarTitleDisplayMode(.large)
+            .searchable(
+                text: $viewModel.searchText,
+                placement: .navigationBarDrawer(displayMode: .always),
+                prompt: "Search items"
+            )
         }
+    }
+
+    // MARK: - Results
+    private var resultsList: some View {
+        List(viewModel.filteredItems) { item in
+            SearchRowView(item: item)
+                .accessibilityIdentifier("search.row.\(item.title)")
+        }
+        .listStyle(.plain)
+        .accessibilityIdentifier("search.list")
+    }
+
+    // MARK: - Empty State
+    private var emptyState: some View {
+        ContentUnavailableView.search(text: viewModel.searchText)
+            .accessibilityIdentifier("search.emptyState")
     }
 }
 
