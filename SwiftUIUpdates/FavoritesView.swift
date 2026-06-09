@@ -8,22 +8,43 @@
 import SwiftUI
 
 struct FavoritesView: View {
+
+    // MARK: - State
+    @State private var viewModel = FavoritesViewModel()
+
+    // MARK: - Body
     var body: some View {
         NavigationStack {
-            VStack(spacing: 12) {
-                Image(systemName: "heart")
-                    .imageScale(.large)
-                    .font(.largeTitle)
-                    .foregroundStyle(.tint)
-                Text("Favorites")
-                    .font(.title2)
-                    .fontWeight(.semibold)
+            Group {
+                if viewModel.hasResults {
+                    favoritesList
+                } else {
+                    emptyState
+                }
             }
-            .padding()
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .navigationTitle("Favorites")
+            .navigationTitle("Favourites")
             .navigationBarTitleDisplayMode(.large)
+            .searchable(
+                text: $viewModel.searchText,
+                placement: .navigationBarDrawer(displayMode: .always),
+                prompt: "Search favourites"
+            )
         }
+    }
+
+    // MARK: - List
+    private var favoritesList: some View {
+        List(viewModel.filteredItems) { item in
+            FavoriteRowView(item: item)
+        }
+        .listStyle(.insetGrouped)
+        .accessibilityIdentifier("favorites.list")
+    }
+
+    // MARK: - Empty State
+    private var emptyState: some View {
+        ContentUnavailableView.search(text: viewModel.searchText)
+            .accessibilityIdentifier("favorites.emptyState")
     }
 }
 
