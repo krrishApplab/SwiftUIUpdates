@@ -18,6 +18,12 @@
 		C276BBC42FD68C3B005E546D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C276BBBF2FD68C3B005E546D /* MainTabView.swift */; };
 		C276BBC52FD68C3B005E546D /* SwiftUIUpdatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C276BBC02FD68C3B005E546D /* SwiftUIUpdatesApp.swift */; };
 		C276BBC72FD68CE3005E546D /* CustomCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C276BBC62FD68CE3005E546D /* CustomCardView.swift */; };
+		D0A0000000000000000002 /* FavoriteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A0000000000000000001 /* FavoriteItem.swift */; };
+		D0A0000000000000000004 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A0000000000000000003 /* FavoritesViewModel.swift */; };
+		D0A0000000000000000006 /* FavoriteRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A0000000000000000005 /* FavoriteRowView.swift */; };
+		D0A0000000000000000008 /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A0000000000000000007 /* SearchItem.swift */; };
+		D0A000000000000000000A /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A0000000000000000009 /* SearchViewModel.swift */; };
+		D0A000000000000000000C /* SearchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A000000000000000000B /* SearchRowView.swift */; };
 		C276BBCC2FD6E853005E546D /* GIT.md in Resources */ = {isa = PBXBuildFile; fileRef = C276BBCB2FD6E853005E546D /* GIT.md */; };
 		C276BBCE2FD6E870005E546D /* TESTING.md in Resources */ = {isa = PBXBuildFile; fileRef = C276BBCD2FD6E870005E546D /* TESTING.md */; };
 		C276BBD02FD68CE3005E546D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C276BBD12FD68CE3005E546D /* HomeView.swift */; };
@@ -56,6 +62,12 @@
 		C276BBBF2FD68C3B005E546D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		C276BBC02FD68C3B005E546D /* SwiftUIUpdatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIUpdatesApp.swift; sourceTree = "<group>"; };
 		C276BBC62FD68CE3005E546D /* CustomCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardView.swift; sourceTree = "<group>"; };
+		D0A0000000000000000001 /* FavoriteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteItem.swift; sourceTree = "<group>"; };
+		D0A0000000000000000003 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		D0A0000000000000000005 /* FavoriteRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRowView.swift; sourceTree = "<group>"; };
+		D0A0000000000000000007 /* SearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
+		D0A0000000000000000009 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		D0A000000000000000000B /* SearchRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRowView.swift; sourceTree = "<group>"; };
 		C276BBC82FD69DAF005E546D /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AGENTS.md; sourceTree = "<group>"; };
 		C276BBCB2FD6E853005E546D /* GIT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = GIT.md; sourceTree = "<group>"; };
 		C276BBCD2FD6E870005E546D /* TESTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TESTING.md; sourceTree = "<group>"; };
@@ -134,6 +146,12 @@
 				C276BBD52FD68CE3005E546D /* FavoritesView.swift */,
 				C276BBD72FD68CE3005E546D /* ProfileView.swift */,
 				C276BBC62FD68CE3005E546D /* CustomCardView.swift */,
+				D0A0000000000000000007 /* SearchItem.swift */,
+				D0A0000000000000000009 /* SearchViewModel.swift */,
+				D0A000000000000000000B /* SearchRowView.swift */,
+				D0A0000000000000000001 /* FavoriteItem.swift */,
+				D0A0000000000000000003 /* FavoritesViewModel.swift */,
+				D0A0000000000000000005 /* FavoriteRowView.swift */,
 				A11A9011C5F14330FA150001 /* AppTheme.swift */,
 				A11A9011C5F14330FA150003 /* SideMenuView.swift */,
 				A11A9011C5F14330FA150005 /* ProfileViewModel.swift */,
@@ -266,6 +284,12 @@
 				C276BBD42FD68CE3005E546D /* FavoritesView.swift in Sources */,
 				C276BBD62FD68CE3005E546D /* ProfileView.swift in Sources */,
 				C276BBC72FD68CE3005E546D /* CustomCardView.swift in Sources */,
+				D0A0000000000000000008 /* SearchItem.swift in Sources */,
+				D0A000000000000000000A /* SearchViewModel.swift in Sources */,
+				D0A000000000000000000C /* SearchRowView.swift in Sources */,
+				D0A0000000000000000002 /* FavoriteItem.swift in Sources */,
+				D0A0000000000000000004 /* FavoritesViewModel.swift in Sources */,
+				D0A0000000000000000006 /* FavoriteRowView.swift in Sources */,
 				C276BBC42FD68C3B005E546D /* MainTabView.swift in Sources */,
 				C276BBC52FD68C3B005E546D /* SwiftUIUpdatesApp.swift in Sources */,
 				AA1A9011C5F14330FA15049E /* SettingsView.swift in Sources */,
