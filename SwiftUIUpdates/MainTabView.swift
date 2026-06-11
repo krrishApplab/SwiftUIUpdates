@@ -29,7 +29,7 @@ struct MainTabView: View {
     static let tabConfigurations: [TabConfiguration] = [
         TabConfiguration(title: "Home", systemImage: "house", accessibilityIdentifier: "tab.home"),
         TabConfiguration(title: "Search", systemImage: "magnifyingglass", accessibilityIdentifier: "tab.search"),
-        TabConfiguration(title: "Favorites", systemImage: "heart", accessibilityIdentifier: "tab.favorites"),
+        TabConfiguration(title: "Favourites", systemImage: "heart", accessibilityIdentifier: "tab.favorites"),
         TabConfiguration(title: "Profile", systemImage: "person", accessibilityIdentifier: "tab.profile"),
         TabConfiguration(title: "Settings", systemImage: "gearshape", accessibilityIdentifier: "tab.settings")
     ]

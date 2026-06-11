@@ -10,7 +10,7 @@ import SwiftUI
 struct SettingsView: View {
 
     // MARK: - Storage
-    @AppStorage("appTheme") private var appTheme: AppTheme = .auto
+    @AppStorage("appTheme") private var appTheme: AppTheme = .dark
 
     // MARK: - Body
     var body: some View {
@@ -26,7 +26,7 @@ struct SettingsView: View {
                 }
 
                 Section("About") {
-                    LabeledContent("App version", value: Self.appVersion)
+                    LabeledContent("App Version", value: Self.appVersion)
                         .accessibilityIdentifier("settings.appVersion")
                 }
             }
@@ -39,7 +39,7 @@ struct SettingsView: View {
     static var appVersion: String {
         let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
         let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "1"
-        return "\(version) (\(build))"
+        return "v \(version)(\(build))"
     }
 }
 

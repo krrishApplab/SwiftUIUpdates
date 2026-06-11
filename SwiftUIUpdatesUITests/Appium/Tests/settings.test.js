@@ -16,4 +16,16 @@ describe('Settings screen', () => {
         await appVersion.waitForExist({ timeout: 10000 })
         expect(await appVersion.isExisting()).toBe(true)
     })
+
+    // Assumes a fresh install (no previously stored theme); the default is Dark.
+    it('defaults the theme selection to Dark', async () => {
+        const themePicker = await $('~settings.theme.picker')
+        await themePicker.waitForExist({ timeout: 10000 })
+
+        const value = await themePicker.getValue().catch(() => null)
+        const label = await themePicker.getAttribute('label').catch(() => null)
+        const selection = `${value ?? ''} ${label ?? ''}`
+
+        expect(selection).toContain('Dark')
+    })
 })

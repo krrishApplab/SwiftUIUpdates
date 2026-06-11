@@ -5,7 +5,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "wdio run ./Config/wdio.conf.js && echo 'HTML report generated at: SwiftUIUpdatesUITests/Appium/Reports/appium-report.html' && open ./Reports/appium-report.html",
+    "test": "wdio run ./Config/wdio.conf.js; echo 'HTML report generated at: SwiftUIUpdatesUITests/Appium/Reports/appium-report.html'; open ./Reports/appium-report.html",
     "test:report": "wdio run ./Config/wdio.conf.js && echo 'HTML report generated at: SwiftUIUpdatesUITests/Appium/Reports/appium-report.html'",
     "test:ci": "wdio run ./Config/wdio.conf.js"
   },

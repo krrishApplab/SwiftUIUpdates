@@ -32,15 +32,15 @@
 
         <tr>
             <td>Start</td>
-            <td>2026-06-08T09:10:19.427Z</td>
+            <td>2026-06-09T11:12:40.640Z</td>
         </tr>
         <tr>
             <td>End</td>
-            <td>2026-06-08T09:10:30.111Z</td>
+            <td>2026-06-09T11:14:57.867Z</td>
         </tr>
         <tr>
             <td>Duration</td>
-            <td>00:00:10.684</td>
+            <td>00:02:17.227</td>
         </tr>
         <tr>
             <td>Breakdown</td>
@@ -52,9 +52,9 @@
                         <td class='test-fail'>Test Failures</td>
                     </tr>
                     <tr>
-                        <td>3</td>
+                        <td>2</td>
                         <td>0</td>
-                        <td>0</td>
+                        <td>7</td>
                     </tr>
                 </table>
             </td>
@@ -376,7 +376,7 @@
 <table class="table table-bordered table-suite">
     <tr class="suite-header">
         <td colspan="2"
-            class="suite-pass">
+            class="suite-fail">
             <h3>
                 <span style="margin: 2px; padding: 1px" class="glyphicon glyphicon-chevron-up">&nbsp;</span>SwiftUIUpdates app launch
             </h3>
@@ -394,15 +394,15 @@
     
         <tr>
             <td>Suite Start</td>
-            <td>2026-06-08T09:10:19.427Z</td>
+            <td>2026-06-09T11:12:40.640Z</td>
         </tr>
         <tr>
             <td>Suite End</td>
-            <td>2026-06-08T09:10:30.111Z</td>
+            <td>2026-06-09T11:12:51.066Z</td>
         </tr>
         <tr>
             <td>Suite Duration</td>
-            <td>00:00:10.684</td>
+            <td>00:00:10.426</td>
         </tr>
 
         
@@ -436,12 +436,67 @@
             <td>
                 <table class="table table-test">
                     <tr class="test-header">
-                        <td colspan="2" class="test-pass">
+                        <td colspan="2" class="test-fail">
                             <span class="test-expand glyphicon glyphicon-chevron-up">&nbsp;</span>
-                            <span class="success">&#10004;</span>
+                            <span class="error">&#10006;</span>
                             <span class="test-title">exposes all tab bar buttons with expected titles</span>
                         </td>
                     </tr>
+                    
+                        
+                            <tr class="test-row expandable-control">
+                                <td colspan="2">
+                                    <p class="pre assert ">
+                                <span style="margin: 2px; padding: 1px"
+                                      class='glyphicon glyphicon-chevron-down'>&nbsp;</span>
+                                        Assertion: [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
+
+[32m- Expected  - 5[39m
+[31m+ Received  + 5[39m
+
+[2m  Array [[22m
+[32m-   &quot;Home&quot;,[39m
+[32m-   &quot;Search&quot;,[39m
+[32m-   &quot;Favourites&quot;,[39m
+[32m-   &quot;Profile&quot;,[39m
+[32m-   &quot;Settings&quot;,[39m
+[31m+   &quot;house&quot;,[39m
+[31m+   &quot;magnifyingglass&quot;,[39m
+[31m+   &quot;heart&quot;,[39m
+[31m+   &quot;person&quot;,[39m
+[31m+   &quot;gearshape&quot;,[39m
+[2m  ][22m
+                                    </p>
+                                </td>
+                            </tr>
+                            
+                                <tr class="test-row">
+                                    <td colspan="2">
+                                        <pre class='pre stack panel'>Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
+
+[32m- Expected  - 5[39m
+[31m+ Received  + 5[39m
+
+[2m  Array [[22m
+[32m-   &quot;Home&quot;,[39m
+[32m-   &quot;Search&quot;,[39m
+[32m-   &quot;Favourites&quot;,[39m
+[32m-   &quot;Profile&quot;,[39m
+[32m-   &quot;Settings&quot;,[39m
+[31m+   &quot;house&quot;,[39m
+[31m+   &quot;magnifyingglass&quot;,[39m
+[31m+   &quot;heart&quot;,[39m
+[31m+   &quot;person&quot;,[39m
+[31m+   &quot;gearshape&quot;,[39m
+[2m  ][22m
+    at Context.&lt;anonymous&gt; (file:///Users/krishnaraj/Documents/GitHub/SwiftUIUpdates/SwiftUIUpdatesUITests/Appium/Tests/appLaunch.test.js:27:23)</pre>
+                                    </td>
+                                </tr>
+                            
+                        
+                        
+                        
+                        
                     
                 </table>
             </td>
@@ -459,6 +514,373 @@
                             <span class="test-title">navigates to each tab and shows its content</span>
                         </td>
                     </tr>
+                    
+                </table>
+            </td>
+        <tr>
+    </table>
+    
+
+                </td>
+            </tr>
+        
+    
+    
+
+    
+
+
+</table>
+
+
+ 
+  </td>
+</tr>
+
+
+<tr>
+  <td colspan="2">
+    
+    <h3 class="warning"></h3>
+      
+
+
+
+<table class="table table-bordered table-suite">
+    <tr class="suite-header">
+        <td colspan="2"
+            class="suite-unknown">
+            <h3>
+                <span style="margin: 2px; padding: 1px" class="glyphicon glyphicon-chevron-up">&nbsp;</span>Favourites screen
+            </h3>
+            
+        </td>
+    </tr>
+    
+        <tr>
+            <td>Spec File</td>
+            <td>/Tests/favorites.test.js</td>
+        </tr>
+    
+
+    
+    
+        <tr>
+            <td>Suite Start</td>
+            <td>2026-06-09T11:12:56.122Z</td>
+        </tr>
+        <tr>
+            <td>Suite End</td>
+            <td>2026-06-09T11:13:16.308Z</td>
+        </tr>
+        <tr>
+            <td>Suite Duration</td>
+            <td>00:00:20.186</td>
+        </tr>
+
+        
+    
+    
+
+    
+
+
+</table>
+
+
+ 
+  </td>
+</tr>
+
+
+<tr>
+  <td colspan="2">
+    
+    <h3 class="warning"></h3>
+      
+
+
+
+<table class="table table-bordered table-suite">
+    <tr class="suite-header">
+        <td colspan="2"
+            class="suite-unknown">
+            <h3>
+                <span style="margin: 2px; padding: 1px" class="glyphicon glyphicon-chevron-up">&nbsp;</span>Profile screen
+            </h3>
+            
+        </td>
+    </tr>
+    
+        <tr>
+            <td>Spec File</td>
+            <td>/Tests/profile.test.js</td>
+        </tr>
+    
+
+    
+    
+        <tr>
+            <td>Suite Start</td>
+            <td>2026-06-09T11:13:21.361Z</td>
+        </tr>
+        <tr>
+            <td>Suite End</td>
+            <td>2026-06-09T11:13:41.553Z</td>
+        </tr>
+        <tr>
+            <td>Suite Duration</td>
+            <td>00:00:20.192</td>
+        </tr>
+
+        
+    
+    
+
+    
+
+
+</table>
+
+
+ 
+  </td>
+</tr>
+
+
+<tr>
+  <td colspan="2">
+    
+    <h3 class="warning"></h3>
+      
+
+
+
+<table class="table table-bordered table-suite">
+    <tr class="suite-header">
+        <td colspan="2"
+            class="suite-unknown">
+            <h3>
+                <span style="margin: 2px; padding: 1px" class="glyphicon glyphicon-chevron-up">&nbsp;</span>Search screen
+            </h3>
+            
+        </td>
+    </tr>
+    
+        <tr>
+            <td>Spec File</td>
+            <td>/Tests/search.test.js</td>
+        </tr>
+    
+
+    
+    
+        <tr>
+            <td>Suite Start</td>
+            <td>2026-06-09T11:13:46.520Z</td>
+        </tr>
+        <tr>
+            <td>Suite End</td>
+            <td>2026-06-09T11:14:06.742Z</td>
+        </tr>
+        <tr>
+            <td>Suite Duration</td>
+            <td>00:00:20.222</td>
+        </tr>
+
+        
+    
+    
+
+    
+
+
+</table>
+
+
+ 
+  </td>
+</tr>
+
+
+<tr>
+  <td colspan="2">
+    
+    <h3 class="warning"></h3>
+      
+
+
+
+<table class="table table-bordered table-suite">
+    <tr class="suite-header">
+        <td colspan="2"
+            class="suite-unknown">
+            <h3>
+                <span style="margin: 2px; padding: 1px" class="glyphicon glyphicon-chevron-up">&nbsp;</span>Settings screen
+            </h3>
+            
+        </td>
+    </tr>
+    
+        <tr>
+            <td>Spec File</td>
+            <td>/Tests/settings.test.js</td>
+        </tr>
+    
+
+    
+    
+        <tr>
+            <td>Suite Start</td>
+            <td>2026-06-09T11:14:11.851Z</td>
+        </tr>
+        <tr>
+            <td>Suite End</td>
+            <td>2026-06-09T11:14:32.044Z</td>
+        </tr>
+        <tr>
+            <td>Suite Duration</td>
+            <td>00:00:20.193</td>
+        </tr>
+
+        
+    
+    
+
+    
+
+
+</table>
+
+
+ 
+  </td>
+</tr>
+
+
+<tr>
+  <td colspan="2">
+    
+    <h3 class="warning"></h3>
+      
+
+
+
+<table class="table table-bordered table-suite">
+    <tr class="suite-header">
+        <td colspan="2"
+            class="suite-fail">
+            <h3>
+                <span style="margin: 2px; padding: 1px" class="glyphicon glyphicon-chevron-up">&nbsp;</span>Home side menu
+            </h3>
+            
+        </td>
+    </tr>
+    
+        <tr>
+            <td>Spec File</td>
+            <td>/Tests/sideMenu.test.js</td>
+        </tr>
+    
+
+    
+    
+        <tr>
+            <td>Suite Start</td>
+            <td>2026-06-09T11:14:37.183Z</td>
+        </tr>
+        <tr>
+            <td>Suite End</td>
+            <td>2026-06-09T11:14:57.867Z</td>
+        </tr>
+        <tr>
+            <td>Suite Duration</td>
+            <td>00:00:20.683</td>
+        </tr>
+
+        
+            <tr>
+                <td>Tests</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    
+    
+    <table>
+        <tr>
+            <td>
+                <table class="table table-test">
+                    <tr class="test-header">
+                        <td colspan="2" class="test-fail">
+                            <span class="test-expand glyphicon glyphicon-chevron-up">&nbsp;</span>
+                            <span class="error">&#10006;</span>
+                            <span class="test-title">opens the side menu from the menu button</span>
+                        </td>
+                    </tr>
+                    
+                        
+                            <tr class="test-row expandable-control">
+                                <td colspan="2">
+                                    <p class="pre assert ">
+                                <span style="margin: 2px; padding: 1px"
+                                      class='glyphicon glyphicon-chevron-down'>&nbsp;</span>
+                                        Assertion: element (&quot;~home.menuButton&quot;) still not existing after 10000ms
+                                    </p>
+                                </td>
+                            </tr>
+                            
+                                <tr class="test-row">
+                                    <td colspan="2">
+                                        <pre class='pre stack panel'>Error: element (&quot;~home.menuButton&quot;) still not existing after 10000ms
+    at async Context.&lt;anonymous&gt; (file:///Users/krishnaraj/Documents/GitHub/SwiftUIUpdates/SwiftUIUpdatesUITests/Appium/Tests/sideMenu.test.js:10:9)</pre>
+                                    </td>
+                                </tr>
+                            
+                        
+                        
+                        
+                        
+                    
+                </table>
+            </td>
+        <tr>
+    </table>
+    
+    <table>
+        <tr>
+            <td>
+                <table class="table table-test">
+                    <tr class="test-header">
+                        <td colspan="2" class="test-fail">
+                            <span class="test-expand glyphicon glyphicon-chevron-up">&nbsp;</span>
+                            <span class="error">&#10006;</span>
+                            <span class="test-title">closes the side menu when an item is selected</span>
+                        </td>
+                    </tr>
+                    
+                        
+                            <tr class="test-row expandable-control">
+                                <td colspan="2">
+                                    <p class="pre assert ">
+                                <span style="margin: 2px; padding: 1px"
+                                      class='glyphicon glyphicon-chevron-down'>&nbsp;</span>
+                                        Assertion: element (&quot;~sidemenu.settings&quot;) still not existing after 10000ms
+                                    </p>
+                                </td>
+                            </tr>
+                            
+                                <tr class="test-row">
+                                    <td colspan="2">
+                                        <pre class='pre stack panel'>Error: element (&quot;~sidemenu.settings&quot;) still not existing after 10000ms
+    at async Context.&lt;anonymous&gt; (file:///Users/krishnaraj/Documents/GitHub/SwiftUIUpdates/SwiftUIUpdatesUITests/Appium/Tests/sideMenu.test.js:20:9)</pre>
+                                    </td>
+                                </tr>
+                            
+                        
+                        
+                        
+                        
                     
                 </table>
             </td>

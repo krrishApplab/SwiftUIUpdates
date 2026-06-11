@@ -12,11 +12,11 @@
 		A11A9011C5F14330FA150006 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A9011C5F14330FA150005 /* ProfileViewModel.swift */; };
 		A11A9011C5F14330FA150008 /* StatisticCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A9011C5F14330FA150007 /* StatisticCardView.swift */; };
 		A11A9011C5F14330FA15000A /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A9011C5F14330FA150009 /* EditProfileView.swift */; };
+		A11A9011C5F14330FA15000C /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A9011C5F14330FA15000B /* SearchViewModel.swift */; };
+		A11A9011C5F14330FA15000E /* SearchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A9011C5F14330FA15000D /* SearchRowView.swift */; };
 		A11A9011C5F14330FA150012 /* FavoriteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A9011C5F14330FA150011 /* FavoriteItem.swift */; };
 		A11A9011C5F14330FA150014 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A9011C5F14330FA150013 /* FavoritesViewModel.swift */; };
 		A11A9011C5F14330FA150016 /* FavoriteRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A9011C5F14330FA150015 /* FavoriteRowView.swift */; };
-		A11A9011C5F14330FA15000C /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A9011C5F14330FA15000B /* SearchViewModel.swift */; };
-		A11A9011C5F14330FA15000E /* SearchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A9011C5F14330FA15000D /* SearchRowView.swift */; };
 		AA1A9011C5F14330FA15049E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D7A8CB1867A2F01CDEDA25 /* SettingsView.swift */; };
 		C276BBC22FD68C3B005E546D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C276BBBD2FD68C3B005E546D /* Assets.xcassets */; };
 		C276BBC32FD68C3B005E546D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C276BBBE2FD68C3B005E546D /* ContentView.swift */; };
@@ -54,11 +54,11 @@
 		A11A9011C5F14330FA150005 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		A11A9011C5F14330FA150007 /* StatisticCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticCardView.swift; sourceTree = "<group>"; };
 		A11A9011C5F14330FA150009 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		A11A9011C5F14330FA15000B /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		A11A9011C5F14330FA15000D /* SearchRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRowView.swift; sourceTree = "<group>"; };
 		A11A9011C5F14330FA150011 /* FavoriteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteItem.swift; sourceTree = "<group>"; };
 		A11A9011C5F14330FA150013 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		A11A9011C5F14330FA150015 /* FavoriteRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRowView.swift; sourceTree = "<group>"; };
-		A11A9011C5F14330FA15000B /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
-		A11A9011C5F14330FA15000D /* SearchRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRowView.swift; sourceTree = "<group>"; };
 		BFD07A4DA50119E378054DA3 /* MainTabViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabViewTests.swift; sourceTree = "<group>"; };
 		C276BBAD2FD68AEF005E546D /* SwiftUIUpdates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIUpdates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C276BBBD2FD68C3B005E546D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -465,6 +465,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,6 +498,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

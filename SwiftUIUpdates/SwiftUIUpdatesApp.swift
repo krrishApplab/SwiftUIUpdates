@@ -11,7 +11,7 @@ import UIKit
 @main
 struct SwiftUIUpdatesApp: App {
 
-    @AppStorage("appTheme") private var appTheme: AppTheme = .auto
+    @AppStorage("appTheme") private var appTheme: AppTheme = .dark
 
     init() {
         Self.configureNavigationTitleAppearance()
@@ -37,3 +37,33 @@ struct SwiftUIUpdatesApp: App {
         UINavigationBar.appearance().compactAppearance = appearance
     }
 }
+
+/*
+ Make reasonable assumptions.
+ Do not ask for confirmation unless blocked.
+ 
+ 
+ Add dark mode support.
+ Preserve all existing functionality.
+ 
+ 
+ //--------------------------------------------------//
+ Create a side menu.
+
+ Requirements:
+ - Show Home, Settings, Profile.
+ - Support iPhone and iPad.
+
+ Constraints:
+ - No third-party libraries.
+ - Preserve existing navigation.
+
+ Done when:
+ - Build succeeds.
+ - Side menu is accessible from all tabs.
+
+ Follow AGENTS.md.
+ //--------------------------------------------------//
+ 
+ 
+*/

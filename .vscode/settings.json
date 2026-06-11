@@ -35,6 +35,8 @@
     "echo *",
     "git *",
     "ls *",
-    "rm *"
+    "rm *",
+    "command *",
+    "gh *"
   ]
 }

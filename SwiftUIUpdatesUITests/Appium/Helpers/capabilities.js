@@ -12,7 +12,7 @@ export const config = {
 export const tabs = [
     { title: 'Home', contentIdentifier: 'tab.home' },
     { title: 'Search', contentIdentifier: 'tab.search' },
-    { title: 'Favorites', contentIdentifier: 'tab.favorites' },
+    { title: 'Favourites', contentIdentifier: 'tab.favorites' },
     { title: 'Profile', contentIdentifier: 'tab.profile' },
     { title: 'Settings', contentIdentifier: 'tab.settings' }
 ]
